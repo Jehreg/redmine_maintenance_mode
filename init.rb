@@ -6,7 +6,7 @@ module MaintenanceMode
 
       def show_maintenance_mode_page
         unless User.current.admin?
-          render :text => "This site is currently under maintenance. Please check back later"
+          render :text => "The IRCan project management site is under maintenance between 17:00 and 19:00 July 7th, 2010.\n De 17:00 a 19:00 le 7 Juillet 2010, est une periode d'entretien pour le site d'administration de projets du RICan. "
           return false
         end
       end
